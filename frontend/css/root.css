@@ -1,0 +1,31 @@
+/* ═══════════════════════════════════════════════════════════
+   root.css — variáveis, reset, base tipográfica
+   Importado por: style.css (que todos os HTMLs carregam)
+═══════════════════════════════════════════════════════════ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap');
+
+/* ── RESET ─────────────────────────────────────────────── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+/* ── VARIÁVEIS ─────────────────────────────────────────── */
+:root {
+  --black:   #080808;
+  --dark:    #111111;
+  --darker:  #0c0c0c;
+  --card:    #161616;
+  --border:  #222222;
+  --border2: #2e2e2e;
+  --muted:   #888888;
+  --muted2:  #555555;
+}
+
+/* ── BASE ──────────────────────────────────────────────── */
+body {
+  background: var(--black);
+  color: #fff;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}

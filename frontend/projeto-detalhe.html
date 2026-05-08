@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto — EIXO Projetos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/projeto-detalhe.css">
+</head>
+<body>
+<script>window.ACTIVE_PAGE='projetos';</script>
+<div id="nav-placeholder"></div>
+
+<div class="proj-detail-hero">
+  <img id="pd-img" src="" alt="">
+  <div class="proj-detail-hero-overlay"></div>
+  <div class="proj-detail-meta-bar">
+    <span class="proj-tag-badge-lg" id="pd-cat"></span>
+    <h1 id="pd-title"></h1>
+    <div class="proj-meta">
+      <span class="proj-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg><span id="pd-loc"></span></span>
+      <span class="proj-meta-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg><span id="pd-year"></span></span>
+    </div>
+  </div>
+</div>
+
+<div class="proj-detail-body">
+  <div class="proj-detail-main">
+    <a class="back-link" href="projetos.html">Voltar aos Projetos</a>
+    <div id="pd-content"></div>
+  </div>
+  <div class="proj-detail-sidebar">
+    <div class="proj-sidebar-card">
+      <h4>Informações do Projeto</h4>
+      <div id="pd-sidebar"></div>
+    </div>
+    <div style="margin-top:14px">
+      <a class="btn btn-outline" href="contato.html" style="width:100%;justify-content:center">Solicitar Orçamento →</a>
+    </div>
+  </div>
+</div>
+
+<div id="footer-placeholder"></div>
+<script src="layout.js"></script>
+<script src="script.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const idx = parseInt(params.get('id')) || 0;
+  const p = projetos[idx];
+  if (p) {
+    document.title = p.title + ' — EIXO Projetos';
+    document.getElementById('pd-img').src           = p.img;
+    document.getElementById('pd-img').alt           = p.title;
+    document.getElementById('pd-cat').textContent   = p.cat;
+    document.getElementById('pd-title').textContent = p.title;
+    document.getElementById('pd-loc').textContent   = p.loc;
+    document.getElementById('pd-year').textContent  = p.year;
+    let c = '<p>' + p.desc + '</p><h2>Escopo de Entrega</h2><ul>';
+    p.delivs.forEach(d => { c += '<li>' + d + '</li>'; });
+    c += '</ul>';
+    document.getElementById('pd-content').innerHTML = c;
+    let s = '';
+    p.sidebar.forEach(([l, v]) => {
+      s += '<div class="proj-sidebar-row"><span class="proj-sidebar-label">' + l + '</span><span class="proj-sidebar-val">' + v + '</span></div>';
+    });
+    document.getElementById('pd-sidebar').innerHTML = s;
+  }
+</script>
+</body>
+</html>

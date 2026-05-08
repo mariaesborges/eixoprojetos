@@ -1,0 +1,19 @@
+/* ═══════════════════════════════════════════════════════════
+   style.css — ponto de entrada único
+   Importa todos os módulos CSS na ordem correta
+═══════════════════════════════════════════════════════════ */
+
+@import url('css/root.css');
+@import url('css/components.css');
+
+/* páginas específicas */
+@import url('css/index.css');
+@import url('css/sobre.css');
+@import url('css/servicos.css');
+@import url('css/projetos.css');
+@import url('css/contato.css');
+@import url('css/projeto-detalhe.css');
+@import url('css/ebooks.css');
+
+/* responsivo — sempre por último */
+@import url('css/responsive.css');

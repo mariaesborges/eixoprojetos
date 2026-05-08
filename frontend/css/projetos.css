@@ -1,0 +1,34 @@
+/* ═══════════════════════════════════════════════════════════
+   projetos.css — filtros, grid de cards e stats
+═══════════════════════════════════════════════════════════ */
+
+/* ── FILTROS ───────────────────────────────────────────── */
+.proj-filter { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 36px; }
+.filter-btn {
+  padding: 6px 14px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+  background: transparent; border: 1px solid var(--border2); color: var(--muted);
+  cursor: pointer; font-family: inherit; transition: all .18s;
+}
+.filter-btn.active,
+.filter-btn:hover { border-color: #fff; color: #fff; }
+
+/* ── GRID DE CARDS ─────────────────────────────────────── */
+.proj-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+.proj-card { background: var(--dark); border: 1px solid var(--border); cursor: pointer; transition: border-color .2s; }
+.proj-card:hover { border-color: #3a3a3a; }
+.proj-thumb-wrap { position: relative; overflow: hidden; aspect-ratio: 16/11; }
+.proj-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; filter: grayscale(10%); transition: transform .4s, filter .3s; }
+.proj-card:hover .proj-thumb-wrap img { transform: scale(1.04); filter: grayscale(0%); }
+.proj-tag-badge { position: absolute; top: 12px; left: 12px; background: rgba(8,8,8,.88); padding: 4px 10px; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: #fff; border: 1px solid var(--border2); }
+.proj-card-body { padding: 22px 22px 26px; }
+.proj-card-body h3 { font-size: 1.25rem; font-weight: 400; margin-bottom: 7px; line-height: 1.2; }
+.proj-card-body p  { font-size: 12px; color: var(--muted); line-height: 1.75; margin-bottom: 12px; }
+.proj-meta { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.proj-meta-item { display: flex; align-items: center; gap: 4px; font-size: 11px; color: var(--muted2); }
+.proj-meta-item svg { width: 10px; height: 10px; opacity: .5; }
+.proj-det-link { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); transition: color .18s; cursor: pointer; }
+.proj-det-link:hover { color: #fff; }
+.proj-det-link::after { content: ' →'; }
+
+/* ── STATS BAR (projetos) ──────────────────────────────── */
+.proj-stats-bar { background: var(--dark); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
