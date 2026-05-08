@@ -1,0 +1,113 @@
+/* ── EBOOKS PAGE ─────────────────────────────────────────── */
+
+.eb-hero {
+  min-height: 62vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 24px 80px;
+  background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,255,255,0.04) 0%, transparent 70%), var(--black);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+}
+.eb-hero-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--border2);
+  padding: 7px 16px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 32px;
+  background: rgba(255,255,255,0.03);
+}
+.eb-hero-badge svg { width: 13px; height: 13px; opacity: 0.5; }
+.eb-hero h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.0;
+  margin-bottom: 18px;
+}
+.eb-hero p {
+  color: var(--muted);
+  font-size: 14px;
+  max-width: 520px;
+  line-height: 1.85;
+  margin-bottom: 36px;
+}
+.eb-hero-checks { display: flex; gap: 28px; flex-wrap: wrap; justify-content: center; }
+.eb-check { display: flex; align-items: center; gap: 7px; font-size: 12px; color: var(--muted); }
+.eb-check svg { width: 14px; height: 14px; opacity: 0.5; }
+
+.eb-section { padding: 80px 0; background: var(--black); }
+.eb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+
+.eb-card { border: 1px solid var(--border); background: var(--dark); overflow: hidden; display: flex; flex-direction: column; }
+
+.eb-carousel { position: relative; aspect-ratio: 16/10; overflow: hidden; background: #0a0a0a; flex-shrink: 0; }
+.eb-carousel-track { display: flex; height: 100%; transition: transform 0.5s cubic-bezier(0.77,0,0.18,1); }
+.eb-carousel-track img { flex-shrink: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.eb-carousel-btn {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  background: rgba(8,8,8,0.65); border: 1px solid rgba(255,255,255,0.15);
+  color: #fff; width: 36px; height: 36px;
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer; font-size: 15px; backdrop-filter: blur(4px);
+  transition: background 0.18s; z-index: 5; font-family: inherit;
+}
+.eb-carousel-btn:hover { background: rgba(255,255,255,0.12); }
+.eb-carousel-btn.prev { left: 12px; }
+.eb-carousel-btn.next { right: 12px; }
+.eb-carousel-dots { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 5; }
+.eb-dot { width: 5px; height: 5px; border-radius: 50%; background: rgba(255,255,255,0.3); border: none; cursor: pointer; padding: 0; transition: background 0.18s, transform 0.18s; }
+.eb-dot.active { background: #fff; transform: scale(1.3); }
+
+.eb-card-body { padding: 32px 32px 36px; display: flex; flex-direction: column; flex: 1; }
+.eb-card-icon { width: 46px; height: 46px; background: rgba(255,255,255,0.06); border: 1px solid var(--border2); display: flex; align-items: center; justify-content: center; margin-bottom: 18px; }
+.eb-card-icon svg { width: 20px; height: 20px; opacity: 0.6; }
+.eb-card-body h2 { font-size: 1.65rem; font-weight: 400; margin-bottom: 10px; letter-spacing: -0.01em; line-height: 1.2; }
+.eb-card-body > p { font-size: 13px; color: var(--muted); line-height: 1.8; margin-bottom: 24px; }
+.eb-card-divider { height: 1px; background: var(--border); margin-bottom: 22px; }
+.eb-includes-label { font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted2); margin-bottom: 14px; font-weight: 400; }
+.eb-includes { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 30px; flex: 1; }
+.eb-includes li { display: flex; align-items: flex-start; gap: 10px; }
+.eb-includes li svg { width: 15px; height: 15px; flex-shrink: 0; margin-top: 2px; opacity: 0.5; }
+.eb-includes li div strong { display: block; font-size: 13px; font-weight: 500; margin-bottom: 2px; }
+.eb-includes li div span { font-size: 11px; color: var(--muted); line-height: 1.6; }
+.eb-buy-btn {
+  display: flex; align-items: center; justify-content: center; gap: 9px;
+  padding: 14px 24px; background: #fff; color: #000;
+  font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase;
+  border: 1px solid #fff; cursor: pointer; font-family: inherit;
+  font-weight: 400; text-decoration: none; transition: all 0.2s; margin-top: auto;
+}
+.eb-buy-btn:hover { background: transparent; color: #fff; }
+.eb-buy-btn svg { width: 14px; height: 14px; }
+
+.eb-custom { margin: 52px auto 80px; max-width: 760px; border: 1px solid var(--border); background: var(--darker); padding: 64px 52px; text-align: center; }
+.eb-custom-icon { width: 52px; height: 52px; border: 1px solid var(--border2); display: flex; align-items: center; justify-content: center; margin: 0 auto 22px; }
+.eb-custom-icon svg { width: 22px; height: 22px; opacity: 0.45; }
+.eb-custom h2 { font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 300; margin-bottom: 12px; letter-spacing: -0.01em; }
+.eb-custom p { color: var(--muted); font-size: 13px; max-width: 480px; margin: 0 auto 28px; line-height: 1.85; }
+
+.eb-faq-section { background: var(--darker); border-top: 1px solid var(--border); padding: 80px 0; }
+.eb-faq-title { font-size: clamp(1.9rem, 3.5vw, 2.8rem); font-weight: 300; text-align: center; margin-bottom: 52px; letter-spacing: -0.01em; }
+.faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq-item { background: var(--dark); border: 1px solid var(--border); overflow: hidden; }
+.faq-q { width: 100%; text-align: left; padding: 20px 24px; background: none; border: none; color: #fff; font-size: 14px; font-family: inherit; font-weight: 400; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; transition: color 0.18s; }
+.faq-q:hover { color: rgba(255,255,255,0.75); }
+.faq-icon { flex-shrink: 0; width: 18px; height: 18px; border: 1px solid var(--border2); display: flex; align-items: center; justify-content: center; font-size: 14px; line-height: 1; transition: transform 0.25s, background 0.18s; color: var(--muted); }
+.faq-item.open .faq-icon { transform: rotate(45deg); background: rgba(255,255,255,0.06); }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.32s ease; }
+.faq-item.open .faq-a { max-height: 200px; }
+.faq-a p { padding: 0 24px 20px; font-size: 13px; color: var(--muted); line-height: 1.85; }
+
+@media(max-width: 860px) {
+  .eb-grid { grid-template-columns: 1fr; }
+  .eb-custom { padding: 40px 24px; }
+}
