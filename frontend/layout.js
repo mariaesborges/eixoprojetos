@@ -90,7 +90,11 @@ function renderFooter() {
       <div class="footer-bottom">
         <p>EIXO Projetos &copy; 2026 Todos os direitos reservados | Desenvolvido por Maria Eduarda Borges</p>
         <div class="social-links">
-          <a href="#">WhatsApp</a><a href="#">Instagram</a><a href="#">YouTube</a><a href="#">TikTok</a>
+          <a href="https://wa.me/5537998461673" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://www.instagram.com/eixoprojetos_/" target="_blank" rel="noopener">Instagram</a>
+          <a href="http://www.youtube.com/@EixoProjetos" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://www.facebook.com/profile.php?id=61561480223787&locale=pt_BR" target="_blank" rel="noopener">Facebook</a>
+          <a href="https://www.tiktok.com/@eixoprojetos" target="_blank" rel="noopener">TikTok</a>
         </div>
       </div>
     </footer>`;

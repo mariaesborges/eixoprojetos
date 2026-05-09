@@ -34,16 +34,16 @@
       <div class="contato-form-box">
         <h2>Envie sua Mensagem</h2>
         <div class="form-row">
-          <div class="form-group"><label>Nome <span class="req">*</span></label><input type="text" placeholder="Seu nome completo"></div>
-          <div class="form-group"><label>E-mail <span class="req">*</span></label><input type="email" placeholder="seu@email.com"></div>
+          <div class="form-group"><label>Nome <span class="req">*</span></label><input type="text" id="f-nome" placeholder="Seu nome completo"></div>
+          <div class="form-group"><label>E-mail <span class="req">*</span></label><input type="email" id="f-email" placeholder="seu@email.com"></div>
         </div>
         <div class="form-row">
-          <div class="form-group"><label>Telefone <span class="req">*</span></label><input type="tel" placeholder="(11) 99999-9999"></div>
-          <div class="form-group"><label>Empresa</label><input type="text" placeholder="Nome da empresa"></div>
+          <div class="form-group"><label>Telefone <span class="req">*</span></label><input type="tel" id="f-tel" placeholder="(11) 99999-9999"></div>
+          <div class="form-group"><label>Empresa</label><input type="text" id="f-empresa" placeholder="Nome da empresa"></div>
         </div>
         <div class="form-group">
           <label>Assunto <span class="req">*</span></label>
-          <select>
+          <select id="f-assunto">
             <option value="">Selecione um assunto</option>
             <option>Projeto Estrutural</option><option>Projeto Arquitetônico</option>
             <option>Projeto de Instalações</option><option>Consultoria Técnica</option>
@@ -51,8 +51,8 @@
             <option>Retrofitting</option><option>Treinamentos Técnicos</option><option>Outro</option>
           </select>
         </div>
-        <div class="form-group"><label>Mensagem <span class="req">*</span></label><textarea placeholder="Descreva seu projeto ou dúvida..."></textarea></div>
-        <button class="btn btn-filled" style="padding:14px 28px;font-size:13px;letter-spacing:.04em">Enviar Mensagem ✈</button>
+        <div class="form-group"><label>Mensagem <span class="req">*</span></label><textarea id="f-mensagem" placeholder="Descreva seu projeto ou dúvida..."></textarea></div>
+        <button class="btn btn-filled" style="padding:14px 28px;font-size:13px;letter-spacing:.04em" onclick="enviarWhatsApp()">Enviar Mensagem ✈</button>
       </div>
     </div>
   </div>
@@ -60,5 +60,9 @@
 
 <div id="footer-placeholder"></div>
 <script src="layout.js"></script>
+
+
+
+<script src="contato.js"></script>
 </body>
 </html>

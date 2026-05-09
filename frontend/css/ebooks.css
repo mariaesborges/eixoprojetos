@@ -45,7 +45,11 @@
 .eb-check svg { width: 14px; height: 14px; opacity: 0.5; }
 
 .eb-section { padding: 80px 0; background: var(--black); }
-.eb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.eb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+
+/* Com 5 cards: os últimos 2 ficam centralizados na 2ª linha */
+.eb-grid .eb-card:nth-child(4) { grid-column: 1 / 2; margin-left: auto; margin-right: 0; }
+.eb-grid .eb-card:nth-child(5) { grid-column: 2 / 3; margin-left: 0; margin-right: auto; }
 
 .eb-card { border: 1px solid var(--border); background: var(--dark); overflow: hidden; display: flex; flex-direction: column; }
 
@@ -108,6 +112,8 @@
 .faq-a p { padding: 0 24px 20px; font-size: 13px; color: var(--muted); line-height: 1.85; }
 
 @media(max-width: 860px) {
-  .eb-grid { grid-template-columns: 1fr; }
+  .eb-grid { grid-template-columns: 1fr 1fr; }
+  .eb-card:last-child:nth-child(3n - 1),
+  .eb-card:last-child:nth-child(3n - 2) { grid-column: auto; }
   .eb-custom { padding: 40px 24px; }
 }
