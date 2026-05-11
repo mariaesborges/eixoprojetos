@@ -3,7 +3,7 @@ const projetos = [
   {
     title:'Residencial Serra Verde', cat:'Loteamento', loc:'São Roque de Minas, MG', year:'2025',
     img:'img/serraverde_01.jpg',
-    imgs:["img/serraverde_01.jpg", "img/serraverde_02.jpg", "img/serraverde_03.jpg", "img/serraverde_04.jpg"],
+    imgs:["img/serraverde_01.jpg","img/serraverde_02.jpg","img/serraverde_03.jpg","img/serraverde_04.jpg","img/serraverde_05.jpg","img/serraverde_06.jpg","img/serraverde_07.jpg","img/serraverde_08.jpg","img/serraverde_09.jpg","img/serraverde_10.jpg","img/serraverde_11.jpg","img/serraverde_12.jpg"],
     desc:'Projeto de loteamento urbanizado com infraestrutura completa, contemplando pavimentação, redes de água e esgoto, iluminação pública e acessos planejados. O empreendimento foi desenvolvido em conformidade com todas as exigências municipais e ambientais, garantindo qualidade de vida para os futuros moradores.',
     delivs:['Projeto urbanístico completo','Infraestrutura de água e esgoto','Sistema de drenagem pluvial','Pavimentação asfáltica','Iluminação pública LED','Projeto paisagístico'],
     sidebar:[['Cliente','Construtora Serra Verde'],['Área Total','42 hectares'],['Lotes','348 unidades'],['Prazo','18 meses'],['Status','Concluído'],['Norma','NBR 6118']],

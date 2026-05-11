@@ -71,7 +71,6 @@ nav {
 .cta-band { background: var(--darker); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .cta-wrap {
   max-width: 800px; margin: 0 auto; padding: 88px 52px; text-align: center;
-  border-left: 1px solid var(--border); border-right: 1px solid var(--border);
 }
 .cta-wrap h2 { font-size: clamp(1.9rem,3.5vw,2.9rem); font-weight: 300; margin-bottom: 16px; line-height: 1.1; letter-spacing: -.01em; }
 .cta-wrap p  { color: var(--muted); font-size: 14px; margin-bottom: 36px; line-height: 1.8; }
