@@ -21,7 +21,7 @@ const projetos = [
   {
     title:'Obra Avelino', cat:'Residencial', loc:'São Roque de Minas, MG', year:'2026',
     img:'img/avelino_01.jpg',
-    imgs:["img/avelino_01.jpg", "img/avelino_02.jpg", "img/avelino_03.jpg", "img/avelino_04.jpg", "img/avelino_05.jpg"],
+    imgs:["img/avelino_01.jpg", "img/avelino_02.jpg", "img/avelino_03.jpg", "img/avelino_04.jpg", "img/avelino_05.jpg", "img/avelino_06.jpg", "img/avelino_07.jpg", "img/avelino_08.jpg", "img/avelino_09.jpg", "img/avelino_10.jpg", "img/avelino_11.jpg"],
     desc:'A Obra Avelino foi desenvolvida com foco em modernidade, conforto e alto padrão de acabamento. A residência possui ambientes integrados e funcionais, valorizando amplitude e iluminação natural através do pé-direito duplo na sala e cozinha conjugadas. O projeto conta com garagem para 2 carros, área gourmet com churrasqueira, 3 dormitórios — sendo 1 suíte com closet — além de lavanderia e banheiro social. Cada detalhe foi pensado para oferecer praticidade, sofisticação e qualidade construtiva em todos os ambientes.',
     delivs:['Projeto residencial contemporâneo completo','Execução estrutural e fundações','Sala e cozinha integradas com pé-direito duplo','Construção da área gourmet com churrasqueira','Garagem coberta para 2 veículos','Instalações elétricas e hidrossanitárias','Execução de suíte com closet','Acabamentos premium internos e externos','Entrega final da residência pronta para moradia'],
     sidebar:[['Localização','R. Avelino Soares de Faria, 28 — Bela Vista'],['Terreno','6 × 25,90 m'],['Área Construída','137,55 m²'],['Configuração','3 quartos (1 suíte com closet)'],['Diferenciais','Pé-direito duplo e área gourmet integrada'],['Prazo','10 meses'],['Status','Disponível para venda']],
