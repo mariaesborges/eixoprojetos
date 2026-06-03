@@ -1,0 +1,21 @@
+/* ═══════════════════════════════════════════════════════════
+   servicos.css — grid de serviços e processo
+═══════════════════════════════════════════════════════════ */
+
+/* ── GRID DE SERVIÇOS ──────────────────────────────────── */
+.svc-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); }
+.svc-detail-card { background: var(--dark); padding: 44px 36px; }
+.svc-detail-card .svc-icon { opacity: .5; }
+.svc-detail-card h3 { font-size: 1.4rem; font-weight: 400; margin-bottom: 10px; }
+.svc-detail-card > p { font-size: 13px; color: var(--muted); line-height: 1.8; margin-bottom: 18px; }
+.svc-bullets { list-style: none; display: flex; flex-direction: column; gap: 7px; }
+.svc-bullets li { font-size: 12px; color: var(--muted); padding-left: 13px; position: relative; }
+.svc-bullets li::before { content: '•'; position: absolute; left: 0; color: var(--muted2); }
+
+/* ── PROCESSO ──────────────────────────────────────────── */
+.processo-grid { display: grid; grid-template-columns: repeat(4,1fr); text-align: center; margin-top: 48px; border-top: 1px solid var(--border); }
+.processo-step { padding: 40px 20px; border-right: 1px solid var(--border); }
+.processo-step:last-child { border-right: none; }
+.processo-num { font-size: 3rem; font-weight: 200; color: var(--muted2); line-height: 1; margin-bottom: 14px; letter-spacing: -.02em; }
+.processo-step h4 { font-size: 13px; font-weight: 500; margin-bottom: 8px; letter-spacing: .02em; }
+.processo-step p  { font-size: 12px; color: var(--muted); line-height: 1.8; }

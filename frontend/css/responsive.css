@@ -1,0 +1,53 @@
+/* ═══════════════════════════════════════════════════════════
+   responsive.css — media queries globais
+   Deve ser o último CSS carregado
+═══════════════════════════════════════════════════════════ */
+
+@media (max-width: 960px) {
+  /* Padding geral */
+  .nav-inner,
+  .container,
+  .proj-detail-body,
+  .proj-detail-meta-bar,
+  .home-hero-content,
+  .stats-inner,
+  .footer-inner,
+  .footer-bottom { padding-left: 24px; padding-right: 24px; }
+
+  /* Grids para coluna única */
+  .svc-grid-home,
+  .svc-detail-grid,
+  .why-grid,
+  .hist-grid,
+  .mv-grid,
+  .contato-outer,
+  .proj-detail-body,
+  .form-row { grid-template-columns: 1fr; }
+
+  /* Grids para 2 colunas */
+  .valores-grid,
+  .equipe-grid,
+  .proj-grid { grid-template-columns: 1fr 1fr; }
+  .processo-grid { grid-template-columns: 1fr 1fr; }
+
+  /* Stats */
+  .stats-inner { grid-template-columns: repeat(2,1fr); }
+  .stat { border-right: none; border-bottom: 1px solid var(--border); padding: 18px 0; }
+
+  /* Footer */
+  .footer-inner { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+  /* Sidebar projeto-detalhe */
+  .proj-detail-sidebar { position: static; }
+
+  /* Formulário */
+  .contato-form-box { padding: 24px; }
+}
+
+@media (max-width: 560px) {
+  .proj-grid,
+  .valores-grid,
+  .equipe-grid { grid-template-columns: 1fr; }
+  .processo-grid { grid-template-columns: 1fr; }
+}

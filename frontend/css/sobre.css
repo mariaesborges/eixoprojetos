@@ -1,0 +1,34 @@
+/* ═══════════════════════════════════════════════════════════
+   sobre.css — história, missão/visão, valores, equipe
+═══════════════════════════════════════════════════════════ */
+
+/* ── HISTÓRIA ──────────────────────────────────────────── */
+.hist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
+.hist-img { border: 1px solid var(--border); overflow: hidden; aspect-ratio: 4/3; }
+.hist-img img { width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+.hist-text h2 { font-size: 2.1rem; font-weight: 300; margin-bottom: 18px; letter-spacing: -.01em; }
+.hist-text p  { color: var(--muted); font-size: 13px; line-height: 1.9; margin-bottom: 14px; }
+
+/* ── MISSÃO & VISÃO ────────────────────────────────────── */
+.mv-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); }
+.mv-card { background: var(--dark); padding: 50px 44px; }
+.mv-icon { opacity: .4; margin-bottom: 18px; }
+.mv-icon svg { width: 30px; height: 30px; }
+.mv-card h3 { font-size: 1.5rem; font-weight: 300; margin-bottom: 14px; letter-spacing: -.01em; }
+.mv-card p  { color: var(--muted); font-size: 13px; line-height: 1.9; }
+
+/* ── VALORES ───────────────────────────────────────────── */
+.valores-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--border); }
+.valor-card { background: var(--dark); padding: 30px 22px; }
+.valor-icon { opacity: .4; margin-bottom: 14px; }
+.valor-icon svg { width: 26px; height: 26px; }
+.valor-card h4 { font-size: 1.05rem; font-weight: 400; margin-bottom: 7px; }
+.valor-card p  { color: var(--muted); font-size: 12px; line-height: 1.8; }
+
+/* ── EQUIPE ────────────────────────────────────────────── */
+.equipe-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 44px; margin-top: 44px; }
+.equipe-member { text-align: center; }
+.equipe-avatar { width: 80px; height: 80px; border-radius: 50%; background: var(--card); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; margin: 0 auto 14px; }
+.equipe-avatar svg { width: 34px; height: 34px; opacity: .3; }
+.equipe-member h4 { font-size: 13px; font-weight: 400; margin-bottom: 3px; }
+.equipe-member p  { font-size: 11px; color: var(--muted); letter-spacing: .07em; text-transform: uppercase; }
